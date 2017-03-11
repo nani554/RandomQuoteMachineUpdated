@@ -6,7 +6,7 @@ $(document).ready(function(){
 				//making an ajax call to get api
 				jsonp:'jsonp',
 				dataType:'jsonp',
-				url: "http://api.forismatic.com/api/1.0/",
+				url: "https://api.forismatic.com/api/1.0/",
 				data: {
 					method: 'getQuote',
 					lang: 'en',
