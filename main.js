@@ -1,4 +1,4 @@
-alert("hello");
+
 $(document).ready(function(){
 	var quote,author;
 		function getNewQuote(){
@@ -28,7 +28,7 @@ $(document).ready(function(){
 				}
 			});
 		}
-	$(".get-quote").click(function(event){
+	$(".get-quote").on("click",function(event){
 		event.preventDefault();//it prevents "page up" when browser refreshed
 		getNewQuote();
 	})
