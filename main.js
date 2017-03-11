@@ -1,4 +1,4 @@
-
+alert("hello");
 $(document).ready(function(){
 	var quote,author;
 		function getNewQuote(){
