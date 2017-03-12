@@ -1,12 +1,13 @@
 
 $(document).ready(function(){
+	getNewQuote();
 	var quote,author;
 		function getNewQuote(){
 			$.ajax({
 				//making an ajax call to get api
 				jsonp:'jsonp',
 				dataType:'jsonp',
-				url: "https://api.forismatic.com/api/1.0/",
+				url: "http://api.forismatic.com/api/1.0/",
 				data: {
 					method: 'getQuote',
 					lang: 'en',
@@ -20,7 +21,7 @@ $(document).ready(function(){
 					$("#quote").text(quote);
 					if(author){
 						//if there is any string in author then show this 
-						$("#author").text('said by '+ author);
+						$("#author").text('-By '+ author);
 					}
 					else{
 						$("#author").text("-Unknown");
